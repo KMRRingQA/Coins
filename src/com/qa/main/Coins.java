@@ -3,7 +3,7 @@ package com.qa.main;
 public class Coins {
 	public void change(double Price, double Payment) {
 		System.out.println("Price: £" + Price + "\nPayment given: £" + Payment);
-		double Owed = Payment - Price + 0.002;
+		double Owed = Payment - Price + 0.0002;
 		int fifty=0, twenty=0, ten=0, five=0, two=0, one=0, fiftyP=0, twentyP=0, tenP=0, fiveP=0, twoP=0, oneP=0;
 		if (Owed < 0) {
 			System.out.println("Try paying more.");
@@ -116,10 +116,6 @@ public class Coins {
 		if (oneP > 1) {
 			System.out.println(oneP + " one penny coins.");
 		}
-		
-		
-		
 	}
-
 }
 
