@@ -1,14 +1,16 @@
 package com.qa.main;
 
 public class Coins {
-	public void change(double Price, double Payment) {
-		System.out.println("Price: £" + Price + "\nPayment given: £" + Payment);
-		double Owed = Payment - Price + 0.0002;
-		int fifty=0, twenty=0, ten=0, five=0, two=0, one=0, fiftyP=0, twentyP=0, tenP=0, fiveP=0, twoP=0, oneP=0;
-		if (Owed < 0) {
+	public void change(double price, double payment) {
+		System.out.println("Price: £" + price + "\nPayment given: £" + payment);
+		double owed = payment - price + 0.00001;
+		System.out.println(owed);
+		int fifty = 0, twenty = 0, ten = 0, five = 0, two = 0, one = 0, fiftyP = 0, twentyP = 0, tenP = 0, fiveP = 0,
+				twoP = 0, oneP = 0;
+		if (owed < 0) {
 			System.out.println("Try paying more.");
 		}
-		for (;Owed>=50;Owed-=50) {
+		for (; owed >= 50; owed -= 50) {
 			fifty++;
 		}
 		if (fifty == 1) {
@@ -17,7 +19,7 @@ public class Coins {
 		if (fifty > 1) {
 			System.out.println(fifty + " fifty pound notes.");
 		}
-		for (;Owed>=20;Owed-=20) {
+		for (; owed >= 20; owed -= 20) {
 			twenty++;
 		}
 		if (twenty == 1) {
@@ -26,7 +28,7 @@ public class Coins {
 		if (twenty > 1) {
 			System.out.println(twenty + " twenty pound notes.");
 		}
-		for (;Owed>=10;Owed-=10) {
+		for (; owed >= 10; owed -= 10) {
 			ten++;
 		}
 		if (ten == 1) {
@@ -35,7 +37,7 @@ public class Coins {
 		if (ten > 1) {
 			System.out.println(ten + " ten pound notes.");
 		}
-		for (;Owed>=5;Owed-=5) {
+		for (; owed >= 5; owed -= 5) {
 			five++;
 		}
 		if (five == 1) {
@@ -44,7 +46,7 @@ public class Coins {
 		if (five > 1) {
 			System.out.println(five + " five pound notes.");
 		}
-		for (;Owed>=2;Owed-=2) {
+		for (; owed >= 2; owed -= 2) {
 			two++;
 		}
 		if (two == 1) {
@@ -53,7 +55,7 @@ public class Coins {
 		if (two > 1) {
 			System.out.println(two + " two pound coins.");
 		}
-		for (;Owed >= 1;Owed-=1) {
+		for (; owed >= 1; owed -= 1) {
 			one++;
 		}
 		if (one == 1) {
@@ -62,7 +64,7 @@ public class Coins {
 		if (one > 1) {
 			System.out.println(one + " one pound coins.");
 		}
-		for (;Owed >= 0.5;Owed-=0.5) {
+		for (; owed >= 0.5; owed -= 0.5) {
 			fiftyP++;
 		}
 		if (fiftyP == 1) {
@@ -71,7 +73,7 @@ public class Coins {
 		if (fiftyP > 1) {
 			System.out.println(fiftyP + " fifty pence coins.");
 		}
-		for (;Owed >= 0.2;Owed-=0.2) {
+		for (; owed >= 0.2; owed -= 0.2) {
 			twentyP++;
 		}
 		if (twentyP == 1) {
@@ -80,7 +82,7 @@ public class Coins {
 		if (twentyP > 1) {
 			System.out.println(twentyP + " twenty pence coins.");
 		}
-		for (;Owed >= 0.1;Owed-=0.1) {
+		for (; owed >= 0.1; owed -= 0.1) {
 			tenP++;
 		}
 		if (tenP == 1) {
@@ -89,7 +91,7 @@ public class Coins {
 		if (tenP > 1) {
 			System.out.println(tenP + " ten pence coins.");
 		}
-		for (;Owed >= 0.05;Owed-=0.05) {
+		for (; owed >= 0.05; owed -= 0.05) {
 			fiveP++;
 		}
 		if (fiveP == 1) {
@@ -98,7 +100,7 @@ public class Coins {
 		if (fiveP > 1) {
 			System.out.println(fiveP + " five pence coins.");
 		}
-		for (;Owed >= 0.02;Owed-=0.02) {
+		for (; owed >= 0.02; owed -= 0.02) {
 			twoP++;
 		}
 		if (twoP == 1) {
@@ -107,7 +109,7 @@ public class Coins {
 		if (twoP > 1) {
 			System.out.println(twoP + " two pence coins.");
 		}
-		for (;Owed >= 0.01;Owed-=0.01) {
+		for (; owed >= 0.01; owed -= 0.01) {
 			oneP++;
 		}
 		if (oneP == 1) {
@@ -118,4 +120,3 @@ public class Coins {
 		}
 	}
 }
-
